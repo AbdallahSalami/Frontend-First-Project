@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 // import GroceryDetail from "../../components/Navbar/GroceryDetails/GroceryDetails";
 import "./Home.css";
-import GroceryDetail from "../../components/Navbar/GroceryDetails/GroceryDetails";
-import Search from "../../components/Navbar/SearchBar/SearchBar";
-import Carousel from "../../components/Navbar/Carousel/Carousel"
+import GroceryDetail from "../../components/GroceryDetails/GroceryDetails";
+import Search from "../../components/SearchBar/SearchBar";
+import Carousel from "../../components/Carousel/Carousel"
 
 const Home = () => {
   const [groceries, setGroceries] = useState([]);
