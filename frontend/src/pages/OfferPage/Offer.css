@@ -1,0 +1,39 @@
+/* OfferPage.css */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+
+.offerMain {
+    width: 100%;
+}
+
+
+.offerBoxImage{
+
+color:blue
+}
+
+
+.offerImage{
+    background-color: aqua;
+    width: 100%;
+    height: 100vh
+}
+
+.offerSearch{
+    color: blue;
+}
+
+.offerGroups{
+    padding-top: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: blueviolet;
+}

@@ -1,4 +1,4 @@
-import { Navigation,Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation ,Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "./Carousel.css";    
