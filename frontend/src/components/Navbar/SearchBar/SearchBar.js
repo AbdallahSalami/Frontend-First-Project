@@ -1,29 +1,22 @@
-import React, { useState } from 'react';
-import "./SearchBar.css"
+import React, { useState } from "react";
+import "./SearchBar.css";
 
-const Search = ({ groceries, setFilteredGroceries }) => {
+const Search = ({ onSearch, placeholder }) => {
   const [searchValue, setSearchValue] = useState("");
-
-  const handleSearch = () => {
-    if (groceries) {
-      const filteredGroceries = groceries.filter(grocery => {
-        return grocery.StoreName && grocery.StoreName.toLowerCase().includes(searchValue.toLowerCase());
-      });
-      setFilteredGroceries(filteredGroceries);
-    }
-  };
-  
 
   return (
     <div className="search">
-      <input placeholder='find your store'
+      <input
         className="searchInput"
         value={searchValue}
+        placeholder={placeholder}
         onChange={(e) => setSearchValue(e.target.value)}
       />
-      <button className="searchButton" onClick={handleSearch}>Search</button>
+      <button className="searchButton" onClick={() => onSearch(searchValue)}>
+        Search
+      </button>
     </div>
-  )
-}
+  );
+};
 
 export default Search;

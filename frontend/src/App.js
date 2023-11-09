@@ -4,7 +4,8 @@ import Home from "./pages/Homepage/Home";
 import Navbar from "./components/Navbar/navbar";
 import Offers from "./pages/Homepage/Offers/Offers";
 import StoreDetails from "./pages/Homepage/StoreDetails/StoreDetails";
-import Footer from "./components/Navbar/footer/footer"
+import Footer from "./components/Navbar/footer/footer";
+import ContactUs from "./pages/Homepage/Contact/ContactUs";
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Offers" element={<Offers />} />
-            <Route path="/StoreDetails/:storeName" element={<StoreDetails />} />
+            <Route path="/Contact" element={<ContactUs />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Footer />

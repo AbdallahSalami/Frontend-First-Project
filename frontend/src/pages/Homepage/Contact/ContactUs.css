@@ -1,0 +1,143 @@
+.contactUsContainer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8d9aa8;
+  box-sizing: border-box;
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  max-width: 1320px;
+}
+
+.contactUsHeader {
+  color: #8d9aa8;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 500px;
+  font-weight: 700;
+}
+
+.contactUsHeader h4 {
+  color: #7cb334;
+  text-transform: uppercase;
+}
+
+.contactUsHeader h1 {
+  color: #263a4f;
+}
+
+.contactUsBody {
+  color: #8d9aa8;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.contactUsForm {
+  padding: 5%;
+  margin: auto;
+}
+
+.contactUsForm input {
+  margin: 10px;
+  background-color: #f6fff2;
+  color: #8d9aa8;
+  border: 0;
+  padding: 0 20px;
+  width: 100%;
+  height: 55px;
+}
+.contactUsForm input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.contactUsForm textarea {
+  margin: 10px;
+  background-color: #f6fff2;
+  color: #8d9aa8;
+  border: 0;
+  padding: 15px 20px;
+  width: 100%;
+  height: 55px;
+}
+
+.contactUsForm button {
+  margin: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  background-color: #f93;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  transition: transform 0.5s;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contactUsForm button:hover {
+  transform: scale(1.05);
+}
+
+.col1 {
+  width: 60%;
+  background-color: #7cb334;
+}
+
+.row {
+  display: flex;
+}
+
+.col2 {
+  background-color: #f93;
+  flex: 1;
+}
+
+.contactInfo {
+  padding: 5%;
+  margin-left: 15px;
+  color: white;
+}
+
+.contactInfo .title {
+  margin-bottom: 15px;
+}
+
+.contactInfo .body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  /* background-color: #34ad54; */
+  background-color: #7cb334;
+
+  margin-right: 10px;
+}
+
+.Icon img {
+  position: relative;
+  top: 18px;
+  left: 18px;
+}
+
+.contactInfo .label {
+  margin: 0;
+}
+
+.contactInfo .value {
+  font-size: 16px;
+}

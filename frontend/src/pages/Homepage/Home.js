@@ -25,14 +25,23 @@ const Home = () => {
     fetchGroceries();
   }, []);
 
+  const handleSearch = (searchValue) => {
+    if (groceries) {
+      const filteredGroceries = groceries.filter((grocery) => {
+        return (
+          grocery.storeName &&
+          grocery.storeName.toLowerCase().includes(searchValue.toLowerCase())
+        );
+      });
+      setFilteredGroceries(filteredGroceries);
+    }
+  };
+
   return (
     <div className="home">
       <Carousel />
       <p className="findgrocery">Find Your Grocery</p>
-      <Search
-        groceries={groceries}
-        setFilteredGroceries={setFilteredGroceries}
-      />
+      <Search onSearch={handleSearch} placeholder="find your store" />
 
       <div className="Groceries">
         {filteredGroceries &&
